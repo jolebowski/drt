@@ -1,5 +1,6 @@
 import { TopBar } from './components/topBar/TopBar';
 import {Intro} from './components/intro/Intro'
+import { Service } from './components/service/Service';
 import {Contact} from'./components/contact/Contact'
 import './app.scss'
 function App() {
@@ -8,16 +9,8 @@ function App() {
             <TopBar />
             <div className="sections">
                 <Intro />
+                <Service />
                 <Contact />
-                <Intro />
-
-                <Contact />
-                <Intro />
-
-                <Contact />
-                <Contact />
-                <Contact />
-
             </div>
         </div>
     );
