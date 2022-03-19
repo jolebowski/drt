@@ -16,7 +16,7 @@ export const TopBar = () => {
           </div>
         </div>
         <div className="right">
-            <a href="#intro" >Into</a>
+            <a href="#service" >Service</a>
             <a href="#contact"  >Contact</a>
         </div>
       </div>

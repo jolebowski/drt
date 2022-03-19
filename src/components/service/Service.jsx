@@ -35,7 +35,7 @@ export const Service = () => {
     },
   ];
   return (
-    <div className="about" id="about">
+    <div className="service" id="service">
       <h1>Services</h1>
       <div className="container">
         {data.map((d) => (
