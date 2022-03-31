@@ -22,7 +22,7 @@ export const Intro = () => {
       </div>
       <div className="right">
         <div className="wrapper">
-        <h2>Réparation de câble chauffant </h2>
+        <h2>Réparation de câble chauffant</h2>
           <h1>Depuis 15 ans</h1>
           <h3>
             <span ref={textRef}></span>
