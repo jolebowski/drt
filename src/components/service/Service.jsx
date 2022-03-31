@@ -10,7 +10,7 @@ export const Service = () => {
         "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/twitter.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        "r adipisicing elit. Placeat magnam dolorem.",
     },
     {
       id: 2,
