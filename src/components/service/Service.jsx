@@ -26,7 +26,7 @@ export const Service = () => {
     {
       id: 3,
       name: "Martin Harold",
-      title: "lol",
+      title: "lolaaa",
       img:
         "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/linkedin.png",
