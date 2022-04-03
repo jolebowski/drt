@@ -20,7 +20,7 @@ export const Service = () => {
         "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/youtube.png",
       desc:
-        "Loreetur adipisicing . Placeat magnam dolore perus. C'est cool la vie nan ",
+        "y a un revert qui a ete fait ici pour modifier ce texxt ",
       featured: true,
     },
     {
