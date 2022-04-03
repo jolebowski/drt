@@ -20,7 +20,7 @@ export const Service = () => {
         "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/youtube.png",
       desc:
-        "Loreetur adipisicing . Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+        "Loreetur adipisicing . Placeat blablablalbla dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
       featured: true,
     },
     {
