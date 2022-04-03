@@ -15,7 +15,7 @@ export const Service = () => {
     {
       id: 2,
       name: "Alex Kalinski",
-      title: "Co-Founder of DELKA",
+      title: "Dans le titre je vais modifier le texte pour voir le ocommit qwue je vais annuler ",
       img:
         "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/youtube.png",
