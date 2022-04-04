@@ -31,7 +31,7 @@ export const Service = () => {
         "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/linkedin.png",
       desc:
-        "nos petits changements dans le code. Loreetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+        "Ce commit sert juste a crée ma branche 2 ",
     },
   ];
   return (
