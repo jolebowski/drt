@@ -2,7 +2,7 @@
 
 This is a website for DRT.
 
-![screen of project](/img/screen.png?raw=true)
+![screen of project](/img/screen-2.png?raw=true)
 
 # Usage
 
