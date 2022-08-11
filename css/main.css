@@ -1046,12 +1046,12 @@ video {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 #contact-us {
-  background-image: url('../img/bg-simplify-section-desktop.svg');
+  background-image: url('../images/bg-simplify-section-desktop.svg');
   background-repeat: no-repeat;
 }
 
 @media (max-width: 576px) {
   #contact-us {
-    background-image: url('../img/bg-simplify-section-mobile.svg');
+    background-image: url('../images/bg-simplify-section-mobile.svg');
   }
 }
