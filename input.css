@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-  #contact-us {
+  #secteur {
     background-image: url('../images/bg-simplify-section-desktop.svg');
     background-repeat: no-repeat;
   }
   
   @media (max-width: 576px) {
-    #contact-us {
+    #secteur {
       background-image: url('../images/bg-simplify-section-mobile.svg');
     }
   }
