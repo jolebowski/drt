@@ -3,6 +3,7 @@ const nav = document.getElementById('menu')
 const currentYear = new Date().getFullYear()
 const modal = document.getElementById('modal')
 const modalImg = document.getElementById('modal-img')
+const modalText = document.getElementById('text')
 
 btn.addEventListener('click', () => {
   btn.classList.toggle('open')
@@ -12,9 +13,11 @@ btn.addEventListener('click', () => {
 
 document.getElementById('year').innerHTML = `Copyright  © ${currentYear} All Rights Reserved`
 
-const showModal = (src) => {
+const showModal = (src, text) => {
+  console.log(text)
   modal.classList.remove('hidden')
   modalImg.src = src
+  modalText.innerHTML = text === undefined ? '' : text
 }
 
 const closeModal = () => {

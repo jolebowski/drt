@@ -20,8 +20,8 @@
           </h4>
         </div>
         <div class="hidden space-x-6 md:flex">
-          <a href="#works" class="hover:text-darkBlue text-xl">Travaux</a>
           <a href="#services" class="hover:text-darkBlue text-xl">Services</a>
+          <a href="#works" class="hover:text-darkBlue text-xl">Travaux</a>
           <a href="#contact" class="hover:text-darkBlue text-xl">Contact</a>
         </div>
         <a
@@ -40,8 +40,8 @@
           id="menu"
           class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
         >
-          <a href="#works">Travaux</a>
           <a href="#services">Services</a>
+          <a href="#works">Travaux</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -50,15 +50,15 @@
       <div
         class="container flex flex-col-reverse items-center px-6 mx-auto mt-12 space-y-0 md:space-y-0 md:flex-row"
       >
-        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-          <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+        <div class="flex flex-col mb-32 md:w-1/2">
+          <h1 class="max-w-md text-3xl font-bold text-center md:text-2xl md:text-left">
             Détection de défaut et réparation de câbles chauffants électriques sols et plafonds.
           </h1>
-          <p class="max-w-sm text-center md:text-left text-gray-500">
-            Avec une expérience et un savoir faire de plus de 15 ans, nous intervenons sur
-            différents sites d'activités tels quel Bureau, Immeubles d'habitation, Pavillon,
-            Équipement, Rampe de parkings etc... <br />
-            Nos réparations bénéficie de la garantie décennale
+          <p class="max-w-sm text-3xl font-bold text-center md:text-left md:text-2xl">
+            Avec une expérience et un savoir faire de plus de 15 ans, <br />
+            nous intervenons sur différents sites d'activités tels quel Bureau, Immeubles
+            d'habitation, Pavillon, Équipement, Rampe de parkings etc... <br />
+            Nos réparations bénéficie de la garantie décennale.
           </p>
         </div>
         <div class="md:w-1/2">
@@ -116,17 +116,107 @@
 
     <div class="py-40">
       <div class="container mx-auto">
-        <div class="flex flex-col gap-3 items-center">
+        <div class="flex flex-col gap-3 items-center pb-2">
           <h2 id="works" class="text-4xl font-bold text-center">Travaux</h2>
         </div>
-        <div class="p-4 sm:p-0 flex flex-wrap justify-between">
-          <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+        <div class="flex justify-center items-center flex-wrap">
+          <button
+            type="button"
+            class="text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
           >
-            <img src="./images/protection.jpg" onclick="showModal('./images/protection.jpg')" />
+            Véhicule labo
+          </button>
+          <button
+            type="button"
+            class="text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            Détection
+          </button>
+          <button
+            type="button"
+            class="text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            Réparation
+          </button>
+          <button
+            type="button"
+            class="text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            Intervention
+          </button>
+          <button
+            type="button"
+            class="text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            Traçage
+          </button>
+          <button
+            type="button"
+            class="text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            Protection
+          </button>
+        </div>
+
+        <div class="p-4 sm:p-0 flex flex-wrap justify-evenly">
+          <div
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+          >
+            <img
+              src="./images/VEHICULE.jpg"
+              onclick="showModal('./images/VEHICULE.jpg', 'Véhicule labo conçu pour intervenir dans tout type d\'intervention même les cas difficiles comme par exemple faux plafond et isolant thermique ou en héraklith.')"
+            />
           </div>
           <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+          >
+            <img
+              src="./images/DEFFAUT.jpg"
+              onclick="showModal('./images/DEFFAUT.jpg', 'Détection de défaut par thermographie infrarouge')"
+            />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+          >
+            <img
+              src="./images/20220127_111827.jpg"
+              onclick="showModal('./images/20220127_111827.jpg', 'Détection de défaut par thermographie infrarouge')"
+            />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+          >
+            <img
+              src="./images/20221220_125015 (1).jpg"
+              onclick="showModal('./images/20221220_125015 (1).jpg', 'Détection de défaut par thermographie infrarouge')"
+            />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+          >
+            <img
+              src="./images/repar1.jpg"
+              onclick="showModal('./images/repar1.jpg', 'Réparation de câble')"
+            />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+          >
+            <img
+              src="./images/REPAR3(1).jpg"
+              onclick="showModal('./images/REPAR3(1).jpg', 'Réparation de câble')"
+            />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+          >
+            <img
+              src="./images/protection.jpg"
+              onclick="showModal('./images/protection.jpg', 'protection total')"
+            />
+          </div>
+          <div
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
           >
             <img
               src="./images/20220216_155039.jpg"
@@ -134,7 +224,7 @@
             />
           </div>
           <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
           >
             <img
               src="./images/20220105_165555 (1).jpg"
@@ -142,27 +232,22 @@
             />
           </div>
           <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
           >
             <img src="./images/CABLE2.jpg" onclick="showModal('./images/CABLE2.jpg')" />
           </div>
           <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
           >
             <img src="./images/carrelage.jpg" onclick="showModal('./images/carrelage.jpg')" />
           </div>
           <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
           >
             <img src="./images/heraklith.jpg" onclick="showModal('./images/heraklith.jpg')" />
           </div>
           <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
-          >
-            <img src="./images/DEFFAUT.jpg" onclick="showModal('./images/DEFFAUT.jpg')" />
-          </div>
-          <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
           >
             <img
               src="./images/20220107_163918.jpg"
@@ -170,15 +255,7 @@
             />
           </div>
           <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
-          >
-            <img
-              src="./images/20221220_125015 (1).jpg"
-              onclick="showModal('./images/20221220_125015 (1).jpg')"
-            />
-          </div>
-          <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
           >
             <img
               src="./images/IMG-20220402-WA0001.jpg"
@@ -186,12 +263,12 @@
             />
           </div>
           <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
           >
             <img src="./images/tringle.jpg" onclick="showModal('./images/tringle.jpg')" />
           </div>
           <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
           >
             <img
               src="./images/IMG-20220402-WA0010.jpg"
@@ -199,17 +276,12 @@
             />
           </div>
           <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
           >
             <img src="./images/traçage2.jpg" onclick="showModal('./images/traçage2.jpg')" />
           </div>
           <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
-          >
-            <img src="./images/VEHICULE.jpg" onclick="showModal('./images/VEHICULE.jpg')" />
-          </div>
-          <div
-            class="w-full md:w-5/12 lg:w-1/4 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
+            class="w-full md:w-5/12 lg:w-1/4 rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-11 cursor-pointer"
           >
             <img
               src="./images/TRACAGE SOL 1.jpg"
@@ -220,7 +292,6 @@
 
         <div
           id="modal"
-          onclick="closeModal()"
           class="hidden fixed top-0 left-0 z-80 w-screen h-screen bg-black/70 flex justify-center items-center"
         >
           <a
@@ -230,8 +301,19 @@
             >&times;</a
           >
           <img id="modal-img" class="max-w-[800px] max-h-[600px] object-cover" />
+          <div class="absolute bg-gray-200 text-darkBlue bottom-20 px-10">
+            <p id="text" class="max-w-sm text-xl font-bold text-center md:text-left md:text-xl"></p>
+          </div>
         </div>
       </div>
+      <button class="filter-button" data-category="animals">Animals</button>
+      <button class="filter-button" data-category="landscapes">Landscapes</button>
+      <button class="filter-button" data-category="people">People</button>
+      <button class="filter-all-button">Show All</button>
+
+      <img class="filter-img" data-category="animals" src="./images/VEHICULE.jpg" />
+      <img class="filter-img" data-category="landscapes" src="./images/TRACAGE SOL 1.jpg" />
+      <img class="filter-img" data-category="people" src="./images/tringle.jpg" />
     </div>
 
     <div class="hidden modal">
@@ -268,13 +350,13 @@
             </a>
 
             <a
-              href="mailto:rsoulimane77@gmail.com"
+              href="mailto:drtchauffage@gmail.com"
               class="block max-w-sm p-6 bg-darkBlue border border-white rounded-lg shadow-md"
             >
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 Email :
               </h5>
-              <p class="text-gray-700 dark:text-gray-400">rsoulimane77@gmail.com</p>
+              <p class="text-gray-700 dark:text-gray-400">drtchauffage@gmail.com</p>
             </a>
           </div>
         </div>
@@ -357,5 +439,31 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script>
+      var filterButtons = document.querySelectorAll('.filter-button')
+      var filterAllButton = document.querySelector('.filter-all-button')
+
+      var showAllImages = function () {
+        var filterImages = document.querySelectorAll('.filter-img')
+        for (var j = 0; j < filterImages.length; j++) {
+          filterImages[j].style.display = 'inline-block'
+        }
+      }
+      for (var i = 0; i < filterButtons.length; i++) {
+        filterButtons[i].addEventListener('click', function () {
+          var selectedCategory = this.getAttribute('data-category')
+          var filterImages = document.querySelectorAll('.filter-img')
+          for (var j = 0; j < filterImages.length; j++) {
+            if (filterImages[j].getAttribute('data-category') === selectedCategory) {
+              filterImages[j].style.display = 'inline-block'
+            } else {
+              filterImages[j].style.display = 'none'
+            }
+          }
+        })
+      }
+
+      filterAllButton.addEventListener('click', showAllImages)
+    </script>
   </body>
 </html>
