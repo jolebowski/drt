@@ -122,37 +122,49 @@
         <div class="flex flex-wrap items-center justify-center">
           <button
             type="button"
-            class="text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            class="filter-all-button text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            Tous
+          </button>
+          <button
+            data-category="labo"
+            type="button"
+            class="filter-button text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
           >
             Véhicule labo
           </button>
           <button
+            data-category="detection"
             type="button"
-            class="text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            class="filter-button text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
           >
             Détection
           </button>
           <button
+            data-category="reparation"
             type="button"
-            class="text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            class="filter-button text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
           >
             Réparation
           </button>
           <button
+            data-category="intervention"
             type="button"
-            class="text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            class="filter-button text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
           >
             Intervention
           </button>
           <button
+            data-category="traçage"
             type="button"
-            class="text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            class="filter-button text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
           >
             Traçage
           </button>
           <button
+            data-category="protection"
             type="button"
-            class="text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            class="filter-button text-darkBlue hover:text-white border active:bg-darkBlue hover:bg-darkBlue focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
           >
             Protection
           </button>
@@ -160,7 +172,8 @@
 
         <div class="flex flex-wrap p-4 sm:p-0 justify-evenly">
           <div
-            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
+            data-category="labo"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
               src="./images/VEHICULE.jpg"
@@ -168,7 +181,8 @@
             />
           </div>
           <div
-            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
+            data-category="detection"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
               src="./images/DEFFAUT.jpg"
@@ -176,7 +190,8 @@
             />
           </div>
           <div
-            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
+            data-category="detection"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
               src="./images/20220127_111827.jpg"
@@ -184,7 +199,8 @@
             />
           </div>
           <div
-            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
+            data-category="detection"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
               src="./images/20221220_125015 (1).jpg"
@@ -192,7 +208,8 @@
             />
           </div>
           <div
-            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
+            data-category="reparation"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
               src="./images/repar1.jpg"
@@ -200,7 +217,8 @@
             />
           </div>
           <div
-            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
+            data-category="reparation"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
               src="./images/REPAR3(1).jpg"
@@ -208,27 +226,92 @@
             />
           </div>
           <div
-            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
+            data-category="reparation"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
+          >
+            <img
+              src="./images/rep3.jpg"
+              onclick="showModal('./images/rep3.jpg', 'Réparation suite a un percement. Intervention sur carrelage au sol')"
+            />
+          </div>
+          <div
+            data-category="intervention"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
+          >
+            <img
+              src="./images/rep4.jpg"
+              onclick="showModal('./images/rep4.jpg', 'Repose de carrelage sur intervention')"
+            />
+          </div>
+          <div
+            data-category="traçage"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
+          >
+            <img
+              src="./images/TRACAGE SOL 1.jpg"
+              onclick="showModal('./images/TRACAGE SOL 1.jpg', 'Traçage avec ou sans plan avant travaux')"
+            />
+          </div>
+          <div
+            data-category="traçage"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
+          >
+            <img
+              src="./images/TRACAGESOL2.jpg"
+              onclick="showModal('./images/TRACAGESOL2.jpg', 'Traçage avec ou sans plan avant travaux')"
+            />
+          </div>
+          <div
+            data-category="traçage"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
+          >
+            <img
+              src="./images/IMG-20220402-WA0010.jpg"
+              onclick="showModal('./images/IMG-20220402-WA0010.jpg', 'Traçage avec ou sans plan avant travaux')"
+            />
+          </div>
+          <div
+            data-category="traçage"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
+          >
+            <img
+              src="./images/traçage2.jpg"
+              onclick="showModal('./images/traçage2.jpg', 'Traçage avec ou sans plan avant travaux')"
+            />
+          </div>
+          <div
+            data-category="traçage"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
+          >
+            <img
+              src="./images/IMG-20220402-WA0001.jpg"
+              onclick="showModal('./images/IMG-20220402-WA0001.jpg',  'Traçage avec ou sans plan avant travaux')"
+            />
+          </div>
+          <div
+            data-category="protection"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
               src="./images/protection.jpg"
-              onclick="showModal('./images/protection.jpg', 'protection total')"
+              onclick="showModal('./images/protection.jpg', 'Protection total de la zone de travail et son environnement pour limiter la poussière au strict minimum')"
             />
           </div>
           <div
-            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
+            data-category="protection"
+            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
               src="./images/20220216_155039.jpg"
-              onclick="showModal('./images/20220216_155039.jpg')"
+              onclick="showModal('./images/20220216_155039.jpg', 'Protection total de la zone de travail et son environnement pour limiter la poussière au strict minimum')"
             />
           </div>
-          <div
+          <!-- <div
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
           >
             <img
               src="./images/20220105_165555 (1).jpg"
-              onclick="showModal('./images/20220105_165555 (1).jpg')"
+              onclick="showModal('./images/20220105_165555 (1).jpg', 'Protection total de la zone de travail et son environnement pour limiter la poussière au strict minimum')"
             />
           </div>
           <div
@@ -257,37 +340,8 @@
           <div
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
           >
-            <img
-              src="./images/IMG-20220402-WA0001.jpg"
-              onclick="showModal('./images/IMG-20220402-WA0001.jpg')"
-            />
-          </div>
-          <div
-            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
-          >
             <img src="./images/tringle.jpg" onclick="showModal('./images/tringle.jpg')" />
-          </div>
-          <div
-            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
-          >
-            <img
-              src="./images/IMG-20220402-WA0010.jpg"
-              onclick="showModal('./images/IMG-20220402-WA0010.jpg')"
-            />
-          </div>
-          <div
-            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
-          >
-            <img src="./images/traçage2.jpg" onclick="showModal('./images/traçage2.jpg')" />
-          </div>
-          <div
-            class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11"
-          >
-            <img
-              src="./images/TRACAGE SOL 1.jpg"
-              onclick="showModal('./images/TRACAGE SOL 1.jpg')"
-            />
-          </div>
+          </div> -->
         </div>
 
         <div
@@ -306,14 +360,6 @@
           </div>
         </div>
       </div>
-      <button class="filter-button" data-category="animals">Animals</button>
-      <button class="filter-button" data-category="landscapes">Landscapes</button>
-      <button class="filter-button" data-category="people">People</button>
-      <button class="filter-all-button">Show All</button>
-
-      <img class="filter-img" data-category="animals" src="./images/VEHICULE.jpg" />
-      <img class="filter-img" data-category="landscapes" src="./images/TRACAGE SOL 1.jpg" />
-      <img class="filter-img" data-category="people" src="./images/tringle.jpg" />
     </div>
 
     <div class="hidden modal">
@@ -439,31 +485,5 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
-    <script>
-      var filterButtons = document.querySelectorAll('.filter-button')
-      var filterAllButton = document.querySelector('.filter-all-button')
-
-      var showAllImages = function () {
-        var filterImages = document.querySelectorAll('.filter-img')
-        for (var j = 0; j < filterImages.length; j++) {
-          filterImages[j].style.display = 'inline-block'
-        }
-      }
-      for (var i = 0; i < filterButtons.length; i++) {
-        filterButtons[i].addEventListener('click', function () {
-          var selectedCategory = this.getAttribute('data-category')
-          var filterImages = document.querySelectorAll('.filter-img')
-          for (var j = 0; j < filterImages.length; j++) {
-            if (filterImages[j].getAttribute('data-category') === selectedCategory) {
-              filterImages[j].style.display = 'inline-block'
-            } else {
-              filterImages[j].style.display = 'none'
-            }
-          }
-        })
-      }
-
-      filterAllButton.addEventListener('click', showAllImages)
-    </script>
   </body>
 </html>
