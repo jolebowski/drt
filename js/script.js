@@ -14,7 +14,6 @@ btn.addEventListener('click', () => {
 document.getElementById('year').innerHTML = `Copyright  © ${currentYear} All Rights Reserved`
 
 const showModal = (src, text) => {
-  console.log(text)
   modal.classList.remove('hidden')
   modalImg.src = src
   modalText.innerHTML = text === undefined ? '' : text
@@ -41,7 +40,6 @@ for (let i = 0; i < filterButtons.length; i++) {
       if (filterImages[j].getAttribute('data-category') === selectedCategory) {
         filterImages[j].style.display = 'inline-block'
       } else {
-        console.log(filterImages[j].style.display)
         filterImages[j].style.display = 'none'
       }
     }
@@ -49,3 +47,43 @@ for (let i = 0; i < filterButtons.length; i++) {
 }
 
 filterAllButton.addEventListener('click', showAllImages)
+const form = document.getElementById('myForm')
+
+form.addEventListener('submit', function (event) {
+  const fields = form.querySelectorAll('input, textarea')
+  let error = false
+  for (var i = 0; i < fields.length; i++) {
+    if (!fields[i].value) {
+      error = true
+      event.preventDefault()
+      document.getElementById(`${fields[i].id}-error`).innerHTML = 'Ce champ est requis'
+    }
+  }
+
+  if (!error) {
+    const params = {
+      name: document.querySelector('#name').value,
+      email: document.querySelector('#email').value,
+      subject: document.querySelector('#subject').value,
+      message: document.querySelector('#message').value,
+    }
+    const serviceId = 'service_bib7sli'
+    const templateId = 'template_hf3gwrb'
+
+    emailjs
+      .send(serviceId, templateId, params)
+      .then((res) => {
+        document.getElementById('name').value = ''
+        document.getElementById('email').value = ''
+        document.getElementById('subject').value = ''
+        document.getElementById('message').value = ''
+        console.log(res)
+        alert('Votre message a bien été envoyé !')
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    document.getElementById('myForm').submit()
+    error = false
+  }
+})

@@ -9,6 +9,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
     <title>DRT</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      ;(function () {
+        emailjs.init('LYyTpV4vkNJNlznFw')
+      })()
+    </script>
   </head>
   <body>
     <nav class="container relative p-6 mx-auto">
@@ -442,47 +451,60 @@
             </a>
           </div>
         </div>
-        <form action="#" class="mt-10 space-y-8">
+        <form id="myForm" class="mt-10 space-y-8">
           <div>
-            <label
-              for="email"
-              class="block mb-2 text-sm font-medium text-white"
+            <label for="email" class="block mb-2 text-sm font-medium text-white"
+              >Nom et prénom</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="shadow-sm border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+              placeholder="Doe John"
+            />
+            <div class="pt-2 text-sm text-red-800" role="alert">
+              <span class="font-medium" id="name-error"></span>
+            </div>
+          </div>
+          <div>
+            <label for="email" class="block mb-2 text-sm font-medium text-white"
               >Votre adresse mail</label
             >
             <input
               type="email"
               id="email"
-              class="shadow-sm border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+              class="shadow-sm border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
               placeholder="john@doe.com"
-              required
             />
+            <div class="pt-2 text-sm text-red-800" role="alert">
+              <span class="font-medium" id="email-error"></span>
+            </div>
           </div>
           <div>
-            <label
-              for="subject"
-              class="block mb-2 text-sm font-medium text-white"
-              >Objet</label
-            >
+            <label for="subject" class="block mb-2 text-sm font-medium text-white">Objet</label>
             <input
               type="text"
               id="subject"
               class="block w-full p-3 text-sm border-gray-300 rounded-lg shadow-sm bordewhiter focus:ring-primary-500 focus:border-primary-500"
               placeholder="Faites-nous savoir comment nous pouvons vous aider"
-              required
             />
+            <div class="pt-2 text-sm text-red-800" role="alert">
+              <span class="font-medium" id="subject-error"></span>
+            </div>
           </div>
           <div class="sm:col-span-2">
-            <label
-              for="message"
-              class="block mb-2 text-sm font-medium text-white"
+            <label for="message" class="block mb-2 text-sm font-medium text-white"
               >Votre message</label
             >
             <textarea
               id="message"
               rows="6"
-              class="block p-2.5 w-full text-sm text-white rounded-lg shadow-sm border border-gray-300"
+              class="block p-2.5 w-full text-sm rounded-lg shadow-sm border border-gray-300"
               placeholder="Laissez un message..."
             ></textarea>
+            <div class="pt-2 text-sm text-red-800" role="alert">
+              <span class="font-medium" id="message-error"></span>
+            </div>
           </div>
           <button
             type="submit"
@@ -513,6 +535,19 @@
             </div> -->
           </div>
         </div>
+        <!-- <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Home</a>
+            <a href="#" class="hover:text-brightRed">Pricing</a>
+            <a href="#" class="hover:text-brightRed">Products</a>
+            <a href="#" class="hover:text-brightRed">About</a>
+          </div>
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Careers</a>
+            <a href="#" class="hover:text-brightRed">Community</a>
+            <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+          </div>
+        </div> -->
       </div>
       <div class="flex items-center justify-center pb-2">
         <div class="hidden text-white md:block" id="year">
