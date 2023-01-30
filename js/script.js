@@ -11,7 +11,7 @@ btn.addEventListener('click', () => {
   nav.classList.toggle('hidden')
 })
 
-document.getElementById('year').innerHTML = `Copyright  © ${currentYear} All Rights Reserved`
+document.querySelector('.year').innerHTML = `Copyright  © ${currentYear} All Rights Reserved`
 
 const showModal = (src, text) => {
   modal.classList.remove('hidden')
