@@ -57,6 +57,8 @@ form.addEventListener('submit', function (event) {
       error = true
       event.preventDefault()
       document.getElementById(`${fields[i].id}-error`).innerHTML = 'Ce champ est requis'
+    } else {
+      document.getElementById(`${fields[i].id}-error`).innerHTML = ' '
     }
   }
 
@@ -77,8 +79,7 @@ form.addEventListener('submit', function (event) {
         document.getElementById('email').value = ''
         document.getElementById('subject').value = ''
         document.getElementById('message').value = ''
-        console.log(res)
-        alert('Votre message a bien été envoyé !')
+        document.getElementById('message-success').innerHTML = 'Votre message a bien été envoyé !'
       })
       .catch((err) => {
         console.log(err)
