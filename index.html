@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
     <link href="css/main.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
     <title>DRT</title>
+    <meta
+      name="description"
+      content="Experts de la réparation des câbles chauffants depuis plus de 15 ans. Nous intervenons sur différents sites d'activités. Nos réprations bénéficie de la garantie décennale."
+    />
+    <link rel="canonical" href="https://detection-reparation-tracage.netlify.app/" />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
       ;(function () {
@@ -91,6 +101,7 @@
             <h5 class="text-xl font-bold">Détection et Réparation</h5>
             <ul>
               <li class="text-lg">Détection de défaut</li>
+              <li class="text-lg">Réparation de câbles chauffants</li>
               <li class="text-lg">Traçage avec ou sans plan avant travaux</li>
               <li class="text-lg">Réparation suite a un percement</li>
               <li class="text-lg">Réparation au sol Intervention sur carrelage au sol</li>
@@ -196,12 +207,13 @@
           </button>
         </div>
 
-        <div class="flex flex-wrap p-4 sm:p-0 justify-evenly">
+        <div class="flex flex-wrap p-4 sm:p-0 justify-evenly containerWorks">
           <div
             data-category="labo"
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/vehiculelabo.jpg"
               onclick="showModal('./images/vehiculelabo.jpg', 'Véhicule labo conçu pour intervenir dans tout type d\'intervention même les cas difficiles comme par exemple faux plafond et isolant thermique ou en héraklith.')"
               alt="Véhicule labo"
@@ -212,6 +224,7 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/detectiondefaut.jpg"
               onclick="showModal('./images/detectiondefaut-copie.jpg', 'Détection de défaut par thermographie infrarouge')"
               alt="Détection de défaut"
@@ -222,6 +235,7 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/20220127_111827(1).jpg"
               onclick="showModal('./images/20220127_111827.jpg', 'Détection de défaut par thermographie infrarouge')"
               alt="Détection de défaut"
@@ -232,6 +246,7 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/20221220_125015(1)(1).jpg"
               onclick="showModal('./images/20221220_125015 (1).jpg', 'Détection de défaut par thermographie infrarouge')"
               alt="Détection de défaut"
@@ -242,8 +257,9 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/repar1copie.jpg"
-              onclick="showModal('./images/repar1.jpg', 'Réparation de câble')"
+              onclick="showModal('./images/repar1.jpg', 'Réparation de câble chauffant')"
               alt="Réparation de câble chauffant"
             />
           </div>
@@ -252,8 +268,9 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/reparationcablechauffant(2)-copie.jpg"
-              onclick="showModal('./images/reparationcablechauffant(2).jpg', 'Réparation de câble')"
+              onclick="showModal('./images/reparationcablechauffant(2).jpg', 'Réparation de câble chauffant')"
               alt="Réparation de câble chauffant"
             />
           </div>
@@ -262,6 +279,7 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/reparationpercement.jpg"
               onclick="showModal('./images/reparationpercement-copie.jpg', 'Réparation suite à un percement')"
               alt="Réparation suite à un percement"
@@ -272,9 +290,10 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/reparationcablechauffant.jpg"
-              onclick="showModal('./images/reparationcablechauffant.jpg', 'Réparation de câble au sol')"
-              alt="Réparation de câble au sol"
+              onclick="showModal('./images/reparationcablechauffant.jpg', 'Réparation de câble chauffant au sol')"
+              alt="Réparation decâble  au sol"
             />
           </div>
           <div
@@ -282,6 +301,7 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/tracageausol.jpg"
               onclick="showModal('./images/tracageausol.jpg', 'Traçage avec ou sans plan avant travaux')"
               alt="Traçage avec ou sans plan avant travaux"
@@ -292,6 +312,7 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/tracageausol(2).jpg"
               onclick="showModal('./images/tracageausol(2).jpg', 'Traçage avec ou sans plan avant travaux')"
               alt="Traçage avec ou sans plan avant travaux"
@@ -302,6 +323,7 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/tracageausol(3)-copie.jpg"
               onclick="showModal('./images/tracageausol(3).jpg', 'Traçage avec ou sans plan avant travaux')"
               alt="Traçage avec ou sans plan avant travaux"
@@ -312,6 +334,7 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/traçage2.jpg"
               onclick="showModal('./images/traçage2.jpg', 'Traçage avec ou sans plan avant travaux')"
               alt="Traçage avec ou sans plan avant travaux"
@@ -322,6 +345,7 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/tracageausol(4)-copie.jpg"
               onclick="showModal('./images/tracageausol(4).jpg',  'Traçage avec ou sans plan avant travaux')"
               alt="Traçage avec ou sans plan avant travaux"
@@ -332,6 +356,7 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/interventioncarrelage-copie.jpg"
               onclick="showModal('./images/interventioncarrelage.jpg', 'Intevention sur carrelage au sol. Avant')"
               alt="Intevention sur carrelage au sol"
@@ -342,14 +367,15 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/reposecarrelage-copie.jpg"
               onclick="showModal('./images/reposecarrelage.jpg', 'Repose de carrelage et joint selon l\'accord au préalable avec le client et la disponibilité du carrelage sur intervention. Après')"
               alt="Repose de carrelage"
             />
             <div>
               <p>
-                Repose de carrelage et joint selon l'accord au préalable avec le
-                client et la disponibilité du carrelage sur intervention
+                Repose de carrelage et joint selon l'accord au préalable avec le client et la
+                disponibilité du carrelage sur intervention
               </p>
             </div>
           </div>
@@ -358,6 +384,7 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/protection.jpg"
               onclick="showModal('./images/protection.jpg', 'Protection total de la zone de travail et son environnement pour limiter la poussière au strict minimum')"
               alt="Protection total"
@@ -368,6 +395,7 @@
             class="w-full m-1 my-3 transition-all rounded-lg cursor-pointer md:w-5/12 lg:w-1/4 md:my-10 hover:scale-11 filter-img"
           >
             <img
+              class="object-cover w-full h-full rounded-lg shadow-lg worksPhotos"
               src="./images/20220216_155039.jpg"
               onclick="showModal('./images/20220216_155039.jpg', 'Protection total de la zone de travail et son environnement pour limiter la poussière au strict minimum')"
               alt="Protection total"
@@ -415,16 +443,17 @@
           id="modal"
           class="fixed top-0 left-0 flex items-center justify-center hidden w-screen h-screen z-80 bg-black/70"
         >
-          <a
+          <button
             class="fixed text-5xl font-bold text-white z-90 top-6 right-8"
-            href="javascript:void(0)"
             onclick="closeModal()"
-            >&times;</a
+            type="button"
           >
+            &times;
+          </button>
           <img
             id="modal-img"
             class="max-w-[800px] max-h-[600px] object-cover"
-            src=""
+            src="images/logo-carre.png"
             alt="modal de l'image"
           />
           <div class="absolute px-10 bg-gray-200 text-darkBlue bottom-20">
@@ -432,15 +461,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="hidden modal">
-      <a
-        class="fixed text-5xl font-bold text-white z-90 top-6 right-8 modal-close"
-        href="javascript:void(0)"
-        onclick="closeModal()"
-        >&times;</a
-      >
     </div>
 
     <section id="contact" class="mt-16 bg-darkBlue">
@@ -460,9 +480,9 @@
               href="tel:0633730597"
               class="block max-w-sm p-6 border border-white rounded-lg shadow-md bg-darkBlue"
             >
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <p class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 Téléphone :
-              </h5>
+              </p>
               <p class="text-white">06 33 73 05 97</p>
             </a>
 
@@ -470,9 +490,9 @@
               href="mailto:drtchauffage@gmail.com"
               class="block max-w-sm p-6 border border-white rounded-lg shadow-md bg-darkBlue"
             >
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <p class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 Email :
-              </h5>
+              </p>
               <p class="text-white">drtchauffage@gmail.com</p>
             </a>
           </div>
