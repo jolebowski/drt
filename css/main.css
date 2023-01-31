@@ -1226,6 +1226,13 @@ video {
   width: 100%;
   height: 100%;
 }
+.icon-services {
+  width: 64px;
+  height: 64px;
+}
+.logo-home{
+  height: 270px;
+}
 
 /* Hamburger Menu */
 
