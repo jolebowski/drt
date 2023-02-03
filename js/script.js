@@ -82,15 +82,19 @@ function sendMail() {
     emailjs
       .send(serviceId, templateId, params)
       .then((res) => {
+        console.log(res)
         hideLoader()
         document.getElementById('name').value = ''
         document.getElementById('email').value = ''
         document.getElementById('subject').value = ''
         document.getElementById('message').value = ''
-        document.getElementById('message-success').innerHTML = 'Votre message a bien été envoyé !'
+        if (res.status === 200) {
+          document.getElementById('message-success').innerHTML = 'Votre message a bien été envoyé !'
+          document.getElementById('message-success').style.display = 'block'
+        }
         setTimeout(() => {
           document.getElementById('message-success').style.display = 'none'
-        }, 6000)
+        }, 4000)
       })
       .catch((err) => {
         console.log(err)
