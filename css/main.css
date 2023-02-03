@@ -682,6 +682,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -722,6 +726,10 @@ video {
   width: 100vw;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -740,6 +748,23 @@ video {
 
 .max-w-screen-md {
   max-width: 768px;
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
 }
 
 .cursor-pointer {
@@ -885,6 +910,10 @@ video {
 .bg-veryDarkBlue {
   --tw-bg-opacity: 1;
   background-color: hsl(233 12% 13% / var(--tw-bg-opacity));
+}
+
+.fill-green-400 {
+  fill: #4ade80;
 }
 
 .object-cover {
@@ -1132,6 +1161,7 @@ video {
 
 .logoHome{
   height: 270px;
+  width: 445px;
 }
 
 /* Hamburger Menu */

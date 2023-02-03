@@ -47,22 +47,30 @@ for (let i = 0; i < filterButtons.length; i++) {
 }
 
 filterAllButton.addEventListener('click', showAllImages)
-const form = document.getElementById('myForm')
 
-form.addEventListener('submit', function (event) {
+function showLoader() {
+  document.getElementById('loader').style.display = 'block'
+}
+
+function hideLoader() {
+  document.getElementById('loader').style.display = 'none'
+}
+//showLoader()
+hideLoader()
+function sendMail() {
+  const form = document.getElementById('myForm')
   const fields = form.querySelectorAll('input, textarea')
   let error = false
   for (var i = 0; i < fields.length; i++) {
     if (!fields[i].value) {
       error = true
-      event.preventDefault()
       document.getElementById(`${fields[i].id}-error`).innerHTML = 'Ce champ est requis'
     } else {
       document.getElementById(`${fields[i].id}-error`).innerHTML = ' '
     }
   }
-
   if (!error) {
+    showLoader()
     const params = {
       name: document.querySelector('#name').value,
       email: document.querySelector('#email').value,
@@ -71,20 +79,21 @@ form.addEventListener('submit', function (event) {
     }
     const serviceId = 'service_bib7sli'
     const templateId = 'template_hf3gwrb'
-
     emailjs
       .send(serviceId, templateId, params)
       .then((res) => {
+        hideLoader()
         document.getElementById('name').value = ''
         document.getElementById('email').value = ''
         document.getElementById('subject').value = ''
         document.getElementById('message').value = ''
         document.getElementById('message-success').innerHTML = 'Votre message a bien été envoyé !'
+        setTimeout(() => {
+          document.getElementById('message-success').style.display = 'none'
+        }, 6000)
       })
       .catch((err) => {
         console.log(err)
       })
-    document.getElementById('myForm').submit()
-    error = false
   }
-})
+}
