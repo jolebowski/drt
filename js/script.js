@@ -77,7 +77,7 @@ function sendMail() {
       subject: document.querySelector('#subject').value,
       message: document.querySelector('#message').value,
     }
-    const serviceId = 'service_bib7sli'
+    const serviceId = 'service_2ioqj0m'
     const templateId = 'template_hf3gwrb'
     emailjs
       .send(serviceId, templateId, params)
